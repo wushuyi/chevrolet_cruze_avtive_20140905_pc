@@ -133,7 +133,14 @@ textarea:-moz-placeholder { color:#a9a9a9; }
     margin-right: 10px;
     background-image: url(../image/style_font.png);
     background-repeat: no-repeat;
-    cursor: pointer;
+    position: relative;
+}
+#bt .navBox li a{
+    display: block;
+    background: transparent;
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
 #bt .navBox li.nav1{
     background-position: 0px 23px;
