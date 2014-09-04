@@ -180,7 +180,16 @@ textarea:-moz-placeholder { color:#a9a9a9; }
     border: none;
     outline: none;
     padding: 0;
-    background: transparent;
+    background-color: transparent;
+    background-image: url("../image/tj_tip.png");
+    background-repeat: no-repeat;
+    background-position: 10000px 2px;
+}
+#bt .try_submit.trying{
+    background-position: -160px 2px;
+}
+#bt .try_submit.tryed{
+    background-position: 0px 2px;
 }
 #bt .try_name, #bt .try_phone{
     width: 190px;

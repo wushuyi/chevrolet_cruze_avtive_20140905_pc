@@ -3,7 +3,7 @@
     $cache = {};
     $(document).ready(function () {
         $cache.window = $(window);
-        $cache.wrapper = $('#wrapper');
+        $cache.wrapper = $('#wrapper, #loading');
         pgResize();
         // 禁止拖动img元素
         $(document.images).on('dragstart', function(e){
@@ -76,6 +76,7 @@
                 return;
             }
             $cache.tryBtn.data('lock', true);
+            $cache.tryBtn.addClass("trying");
             var cccdata = {
                 car:7,
                 dealer:'1536',
@@ -90,6 +91,7 @@
                 if (data.result == "success") {
                     if (data.jsonResponse == 0) {
                         alert("提交失败");
+                        $cache.tryBtn.data('lock', false);
                     } else if (data.jsonResponse == 1) {
                         $(window.totalE).trigger('trySuccess', {
                             car: cccdata.car,
@@ -97,10 +99,15 @@
                             phone: cccdata.mobile,
                             record_id: data.record_id
                         });
-						alert('提交成功');
+                        $cache.tryBtn.removeClass("trying").addClass("tryed");
+                        setTimeout(function(){
+                            $cache.tryBtn.removeClass("tryed");
+                            $cache.tryBtn.data('lock', false);
+                        }, 3000);
                     }
                 } else {
                     alert("提交失败");
+                    $cache.tryBtn.data('lock', false);
                 }
             });
         });
