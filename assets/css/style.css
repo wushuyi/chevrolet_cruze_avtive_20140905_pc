@@ -24,11 +24,10 @@ input:-moz-placeholder { color:#a9a9a9; }
 textarea:-moz-placeholder { color:#a9a9a9; }
 
 #wrapper , #loading{
+    width: 100%;
     position: absolute;
     top: 0;
     bottom: 0;
-    right: 0;
-    left: 0;
 }
 #loading{
     z-index: 10;
@@ -80,15 +79,16 @@ textarea:-moz-placeholder { color:#a9a9a9; }
     overflow: hidden;
 }
 #mid .pgbg{
-    width: 1920px;
-    height: 100%;
     position: absolute;
-    left: 50%;
-    margin-left: -960px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 #mid .pgbg img{
     max-width: none;
     height: 100%;
+    width: 100%;
     display: block;
     margin: 0 auto;
 }
@@ -107,6 +107,16 @@ textarea:-moz-placeholder { color:#a9a9a9; }
     float: right;
     margin-bottom: 2%;
     position: relative;
+}
+#mid .car{
+    background: url('../image/car.png') no-repeat;
+    width: 968px;
+    height: 495px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -40px;
+    margin-left: -484px;
 }
 #bt{
     height: 50px;
@@ -193,8 +203,8 @@ textarea:-moz-placeholder { color:#a9a9a9; }
         height: 700px;
     }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
     #wrapper {
-        width: 1200px;
+        width: 1000px;
     }
 }
