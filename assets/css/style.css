@@ -74,7 +74,7 @@ textarea:-moz-placeholder { color:#a9a9a9; }
 #mid{
     position: absolute;
     top: 68px;
-    bottom: 68px;
+    bottom: 50px;
     right: 0;
     left: 0;
     overflow: hidden;
@@ -109,7 +109,7 @@ textarea:-moz-placeholder { color:#a9a9a9; }
     position: relative;
 }
 #bt{
-    height: 68px;
+    height: 50px;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -117,22 +117,22 @@ textarea:-moz-placeholder { color:#a9a9a9; }
     background-color: #181818;
 }
 #bt .btBox {
-    width: 1200px;
+    width: 924px;
     height: 100%;
     margin: 0 auto;
+    background: url('../image/bt_trybox.png') no-repeat;
+    background-position: 0px 6px;
 }
 #bt .navBox{
-    width: 340px;
+    width: 240px;
     height: 100%;
     float: left;
 }
 #bt .navBox li{
-    width: 160px;
+    width: 110px;
     height: 68px;
     float: left;
-    margin-right: 10px;
-    background-image: url(../image/style_font.png);
-    background-repeat: no-repeat;
+    margin: 0 4px;
     position: relative;
 }
 #bt .navBox li a{
@@ -142,69 +142,46 @@ textarea:-moz-placeholder { color:#a9a9a9; }
     width: 100%;
     height: 100%;
 }
-#bt .navBox li.nav1{
-    background-position: 0px 23px;
-}
-#bt .navBox li.nav1:after{
-    content: '';
-    display: block;
-    height: 30px;
-    width: 1px;
-    background-color: #ffffff;
-    float: right;
-    margin-right: -10px;
-    margin-top: 20px;
-}
-#bt .navBox li.nav2 {
-    background-position: -180px 24px;
-}
 #bt .tryBox{
-    width: 860px;
-    height: 44px;
-    margin-top: 14px;
+    width: 664px;
+    height: 32px;
+    margin-top: 7px;
     float: right;
 }
 #bt .tit_yysj{
-    width: 188px;
+    width: 136px;
     height: 100%;
     float: left;
     position: relative;
-    background-color: #961B2C;
-    background-image: url(../image/style_font.png);
-    background-position: -322px 8px;
-    background-repeat: no-repeat;
 }
 #bt .tit_yysj img{
-    width: 70px;
+    width: 54px;
     display: block;
     position: absolute;
-    top: -20px;
-    left: -8px;
+    top: -15px;
+    left: -6px;
 }
 #bt .try_submit {
     display: block;
-    width: 180px;
+    width: 138px;
     height: 100%;
-    margin-left: 4px;
+    margin-left: 2px;
     float: left;
     border: none;
     outline: none;
     padding: 0;
-    background-color: #961B2C;
-    background-image: url(../image/style_font.png);
-    background-position: -518px 8px;
-    background-repeat: no-repeat;
+    background: transparent;
 }
 #bt .try_name, #bt .try_phone{
-    width: 240px;
+    width: 190px;
     height: 100%;
     display: block;
     float: left;
     border: none;
     background-color: #282828;
-    margin-left: 4px;
+    margin-left: 3px;
     color: #C5C5C5;
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
     outline: none;
 }
