@@ -131,7 +131,7 @@ textarea:-moz-placeholder { color:#a9a9a9; }
     height: 100%;
     margin: 0 auto;
     background: url('../image/bt_trybox.png') no-repeat;
-    background-position: 0px 6px;
+    background-position: 40px 6px;
 }
 #bt .navBox{
     width: 240px;
