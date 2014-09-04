@@ -12,7 +12,7 @@ $(document).ready(function(){
         mz.event(mz.pgName + '-首页-配置价格');
     });
     $('#bt .nav1').on('click', function(e){
-        mz.event(mz.pgName + '-款科鲁兹');
+        mz.event(mz.pgName + '-新款科鲁兹');
     });
     $('#bt .nav2').on('click', function(e){
         mz.event(mz.pgName + '-科鲁兹掀背车');

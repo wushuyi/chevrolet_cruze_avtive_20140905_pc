@@ -198,13 +198,3 @@ textarea:-moz-placeholder { color:#a9a9a9; }
 #bt .try_name.tip, #bt .try_phone.tip{
     color: #C8C8C8;
 }
-@media (max-height: 700px)  {
-    #wrapper{
-        height: 700px;
-    }
-}
-@media (max-width: 1000px) {
-    #wrapper {
-        width: 1000px;
-    }
-}
